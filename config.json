@@ -23,8 +23,11 @@
       "speaker": "Arvind Bhargava & Chidrup Jain",
       "speakerBio": "SEBI & AMFI Compliance Consultant",
       "topics": [
-        "Regulatory Compliance for MFD",      
-      ],
+        "Advanced pivot tables and dynamic arrays",
+        "Financial modelling best practices",
+        "Dashboard design for non-technical stakeholders",
+        "Common Excel errors and how to avoid them"
+     ],
       "active": true
     }
   ],
