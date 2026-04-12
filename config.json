@@ -1,0 +1,46 @@
+{
+  "brand": {
+    "name": "FinApp",
+    "tagline": "Learn. Grow. Excel.",
+    "primaryColor": "#4A3FB5",
+    "logoUrl": "",
+    "supportEmail": "partners@pulslabs.co.in",
+    "supportPhone": "+91 98765 43210",
+    "whatsappChannel": "https://whatsapp.com/channel/0029VbBDvFeG3R3js9UNeq0j"
+  },
+  "sessions": [
+    {
+      "id": "session_apr_2026",
+      "title": "Risk Profile Bina, Business Adhura 
+MFD Ka Insurance ",
+      "date": "Saturday, 19 April 2026",
+      "time": "11:00 AM IST",
+      "duration": "2 hours",
+      "price": 149,
+      "currency": "INR",
+      "seats": 50,
+      "seatsLeft": 38,
+      "payuLink": "https://pmny.in/YOUR_PAYU_LINK_HERE",
+      "speaker": "Arvind Bhargava & Chidrup Jain",
+      "speakerBio": "SEBI & AMFI Compliance Consultant",
+      "topics": [
+        "Regulatory Compliance for MFD",      
+      ],
+      "active": true
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Will I get a recording?",
+      "a": "Yes, all paid registrants receive the recording within 24 hours."
+    },
+    {
+      "q": "What if I cannot attend?",
+      "a": "Refunds available up to 48 hours before the session."
+    },
+    {
+      "q": "What do I need to join?",
+      "a": "A device with Zoom installed and a stable internet connection."
+    }
+  ]
+}
