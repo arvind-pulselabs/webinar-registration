@@ -9,6 +9,9 @@
 <body>
 <header id="hero">
   <div class="container">
+    <div id="logo-wrapper">
+      <img id="brand-logo" src="" alt="FinApp" style="display:none;">
+    </div>
     <p id="brand-name" class="brand"></p>
     <h1 id="webinar-title"></h1>
     <p id="webinar-meta" class="meta"></p>
@@ -133,6 +136,16 @@ async function init() {
   const sessions = cfg.sessions.filter(s => s.active);
   document.documentElement.style.setProperty("--brand", brand.primaryColor);
   document.getElementById("brand-name").textContent = brand.name;
+
+  // Show logo if configured in config.json
+  if (brand.logoUrl) {
+    const logo = document.getElementById("brand-logo");
+    logo.src = brand.logoUrl;
+    logo.alt = brand.name;
+    logo.style.display = "block";
+    // Hide the text brand name if logo is present — avoids duplication
+    document.getElementById("brand-name").style.display = "none";
+  }
   document.getElementById("page-title").textContent = brand.name + " — Register";
   document.getElementById("footer-brand").textContent = brand.name;
   document.getElementById("footer-contact").innerHTML =
