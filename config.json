@@ -1,12 +1,14 @@
 {
   "brand": {
-    "name": "FinApp",
-    "tagline": "Learn. Grow. Excel.",
-    "primaryColor": "#4A3FB5",
-    "supportEmail": "partners@pulselabs.co.in",
-    "supportPhone": "+91 98917 91033",
-    "whatsappChannel": "https://tinyurl.com/finappwchannel"
-  },
+  "name": "FinApp",
+  "tagline": "Learn. Grow. Excel.",
+  "primaryColor": "#4A3FB5",
+  "logoUrl": "https://github.com/arvind-pulselabs/webinar-registration/blob/c808efd1927efb9ce49fbd4717cb07c369e89e80/finapp%20logo%20%20(1).png",
+  "supportEmail": "partners@pulselabs.co.in",
+  "supportPhone": "+91 98917 91033",
+  "whatsappChannel": "https://tinyurl.com/finappwchannel"
+},
+  
   "sessions": [
     {
       "id": "session_apr_2026",
