@@ -94,7 +94,6 @@
   const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbz0kMrRPbMD8yB6RPdvdMY-o8o83PtGDnxRLTVE4ynbisrY3SUMMTt3wkozXgOWSK93/exec
 ";
 
-
   async function init() {
     const cfg = await fetch("config.json").then(r => r.json());
     const brand = cfg.brand;
