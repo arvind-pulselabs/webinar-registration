@@ -132,12 +132,8 @@ async function init() {
   // Add to init() in index.html — reads UTM from URL
 const urlParams = new URLSearchParams(window.location.search);
 const utmSource = urlParams.get("utm_source") || "";
-
-
 // Then include it in the form submission body:
 utm: utmSource,
-
-
 // Share links like this:
 // WhatsApp campaign:
 // https://yourname.github.io/webinar-registration?utm_source=whatsapp
@@ -145,7 +141,6 @@ utm: utmSource,
 // https://yourname.github.io/webinar-registration?utm_source=email
 // LinkedIn:
 // https://yourname.github.io/webinar-registration?utm_source=linkedin
-
   const cfg = await fetch("config.json").then(r => r.json());
   const brand = cfg.brand;
   const sessions = cfg.sessions.filter(s => s.active);
