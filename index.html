@@ -124,10 +124,10 @@
   </div>
 </div>
 <script>
-const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyLIm83saStMQmsfpqJPn9aPtZW-UkS4i7yShRB8i5mv-pB7hRCO8K10WhNQCVV0m8Z/exec";
+const APPS_SCRIPT_URL = "latest one : https://script.google.com/macros/s/AKfycbyLIm83saStMQmsfpqJPn9aPtZW-UkS4i7yShRB8i5mv-pB7hRCO8K10WhNQCVV0m8Z/exec";
 
 
-async function init() { 
+async function init() {
   const cfg = await fetch("config.json").then(r => r.json());
   const brand = cfg.brand;
   const sessions = cfg.sessions.filter(s => s.active);
@@ -245,3 +245,4 @@ init();
 </script>
 </body>
 </html>
+
