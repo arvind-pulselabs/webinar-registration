@@ -14,16 +14,16 @@
       "date": "Sunday, 19 April 2026",
       "time": "11:00 AM IST",
       "duration": "2 hours",
-      "price": 1999,
+      "price": 149,
       "currency": "INR",
       "seatsLeft": 48,
       "payuLink": "https://u.payu.in/PAYUMN/WInb8po5yGFi",
       "speaker": "Arvind Bhargava and Chidrup Jain",
       "speakerBio": "MFD Compliance Consultants",
       "topics": [
-        "Topic 1",
-        "Topic 2",
-        "Topic 3"
+        "Understand SEBI Master Circular for MFD on Risk Profiling",
+        "What is suitability requirement",
+        "How to be Audit ready irrespective of AUM"
       ],
       "active": true
     }
@@ -32,7 +32,7 @@
     { "q": "Will I get a recording?",
       "a": "Yes, all paid registrants receive the recording within 24 hours." },
     { "q": "What if I cannot attend?",
-      "a": "Refunds available up to 48 hours before the session." },
+      "a": "No Refunds" },
     { "q": "Is GST invoice provided?",
       "a": "Yes. Please ensure your GST number is entered correctly at registration." }
   ]
