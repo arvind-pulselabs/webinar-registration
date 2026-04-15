@@ -3,10 +3,9 @@
     "name": "FinApp",
     "tagline": "Learn. Grow. Excel.",
     "primaryColor": "#4A3FB5",
-    "logoUrl": "",
     "supportEmail": "partners@pulselabs.co.in",
-    "supportPhone": "+91 98765 43210",
-    "whatsappChannel": "https://whatsapp.com/channel/0029VbBDvFeG3R3js9UNeq0j"
+    "supportPhone": "+91 98917 91033",
+    "whatsappChannel": "https://tinyurl.com/finappwchannel"
   },
   "sessions": [
     {
@@ -15,34 +14,26 @@
       "date": "Sunday, 19 April 2026",
       "time": "11:00 AM IST",
       "duration": "2 hours",
-      "price": 149,
+      "price": 1999,
       "currency": "INR",
-      "seats": 50,
-      "seatsLeft": 38,
+      "seatsLeft": 48,
       "payuLink": "https://u.payu.in/PAYUMN/WInb8po5yGFi",
-      "speaker": "Arvind Bhargava & Chidrup Jain",
-      "speakerBio": "SEBI & AMFI Compliance Consultant",
+      "speaker": "Arvind Bhargava and Chidrup Jain",
+      "speakerBio": "MFD Compliance Consultants",
       "topics": [
-        "Advanced pivot tables and dynamic arrays",
-        "Financial modelling best practices",
-        "Dashboard design for non-technical stakeholders",
-        "Common Excel errors and how to avoid them"
-     ],
+        "Topic 1",
+        "Topic 2",
+        "Topic 3"
+      ],
       "active": true
     }
   ],
   "faqs": [
-    {
-      "q": "Will I get a recording?",
-      "a": "Yes, all paid registrants receive the recording within 24 hours."
-    },
-    {
-      "q": "What if I cannot attend?",
-      "a": "Refunds available up to 48 hours before the session."
-    },
-    {
-      "q": "What do I need to join?",
-      "a": "A device with Zoom installed and a stable internet connection."
-    }
+    { "q": "Will I get a recording?",
+      "a": "Yes, all paid registrants receive the recording within 24 hours." },
+    { "q": "What if I cannot attend?",
+      "a": "Refunds available up to 48 hours before the session." },
+    { "q": "Is GST invoice provided?",
+      "a": "Yes. Please ensure your GST number is entered correctly at registration." }
   ]
 }
