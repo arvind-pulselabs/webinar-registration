@@ -27,7 +27,16 @@
         "What is suitability requirement",
         "How to be Audit ready irrespective of AUM"
       ],
-      "active": true
+      "active": true,
+
+      "fields": {
+        "show_arn":        true,
+        "show_euin":       false,
+        "show_aum":        true,
+        "show_experience": true,
+        "show_gst":        false,
+        "show_address":    false
+      }
     }
   ],
   "faqs": [
