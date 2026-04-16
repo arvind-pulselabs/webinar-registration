@@ -46,4 +46,22 @@ align-items:center; justify-content:center; }
   max-width: 220px;
   object-fit: contain;
   display: block;
+}.req-star {
+  color: #A32D2D;
+  margin-left: 2px;
 }
+
+.field-note {
+  display: block;
+  font-size: 12px;
+  font-weight: normal;
+  color: #888;
+  margin-top: 2px;
+  margin-bottom: 4px;
+}
+
+#section-professional,
+#section-gst {
+  transition: none;
+}
+
