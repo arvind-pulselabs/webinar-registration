@@ -7,10 +7,11 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <header id="hero">
   <div class="container">
     <div id="logo-wrapper">
-      <img id="brand-logo" src="" alt="FinApp" style="display:none;">
+      <img id="brand-logo" src="" alt="" style="display:none;">
     </div>
     <p id="brand-name" class="brand"></p>
     <h1 id="webinar-title"></h1>
@@ -18,24 +19,34 @@
     <div id="seats-badge" class="badge"></div>
   </div>
 </header>
+
 <main class="container">
+
   <section id="topics-section">
     <h2>What you will learn</h2>
     <ul id="topics-list"></ul>
   </section>
+
+  <section id="speaker-section">
+    <h2>Your instructor</h2>
+    <p><strong id="speaker-name"></strong></p>
+    <p id="speaker-bio"></p>
+  </section>
+
   <section id="register-section">
     <h2>Register now</h2>
+
     <div id="session-select-wrapper">
       <label>Select session
         <select id="session-select"></select>
       </label>
     </div>
+
     <div id="price-display"></div>
+
     <form id="reg-form" novalidate>
 
-
       <p class="form-section-label">Personal details</p>
-
 
       <label>Full name *
         <input type="text" id="f-name" required
@@ -54,71 +65,98 @@
                placeholder="e.g. Mumbai">
       </label>
 
+      <div id="section-professional" style="display:none;">
+        <p class="form-section-label">Professional details</p>
 
-      <p class="form-section-label">Professional details</p>
+        <div id="field-arn" style="display:none;">
+          <label>ARN Number <span class="req-star">*</span>
+            <input type="text" id="f-arn"
+                   placeholder="e.g. ARN-12345">
+          </label>
+        </div>
 
+        <div id="field-euin" style="display:none;">
+          <label>EUIN
+            <input type="text" id="f-euin"
+                   placeholder="e.g. E123456">
+          </label>
+        </div>
 
-      <label>ARN Number *
-        <input type="text" id="f-arn" required
-               placeholder="e.g. ARN-12345">
-      </label>
-      <label>EUIN (optional)
-        <input type="text" id="f-euin"
-               placeholder="e.g. E123456">
-      </label>
-      <label>AUM Range *
-        <select id="f-aum" required>
-          <option value="">Select AUM range</option>
-          <option value="Below 5 Cr">Below ₹5 Cr</option>
-          <option value="5-25 Cr">5 Cr – 25 Cr</option>
-          <option value="25-100 Cr">25 Cr – 100 Cr</option>
-          <option value="100-500 Cr">100 Cr – 500 Cr</option>
-          <option value="Above 500 Cr">Above ₹500 Cr</option>
-        </select>
-      </label>
-      <label>Years of experience *
-        <select id="f-experience" required>
-          <option value="">Select range</option>
-          <option value="0-2 years">0–2 years</option>
-          <option value="3-5 years">3–5 years</option>
-          <option value="6-10 years">6–10 years</option>
-          <option value="Above 10 years">Above 10 years</option>
-        </select>
-      </label>
+        <div id="field-aum" style="display:none;">
+          <label>AUM Range <span class="req-star">*</span>
+            <select id="f-aum">
+              <option value="">Select AUM range</option>
+              <option value="Below 5 Cr">Below &#8377;5 Cr</option>
+              <option value="5-25 Cr">5 Cr &#8211; 25 Cr</option>
+              <option value="25-100 Cr">25 Cr &#8211; 100 Cr</option>
+              <option value="100-500 Cr">100 Cr &#8211; 500 Cr</option>
+              <option value="Above 500 Cr">Above &#8377;500 Cr</option>
+            </select>
+          </label>
+        </div>
 
+        <div id="field-experience" style="display:none;">
+          <label>Years of experience <span class="req-star">*</span>
+            <select id="f-experience">
+              <option value="">Select range</option>
+              <option value="0-2 years">0&#8211;2 years</option>
+              <option value="3-5 years">3&#8211;5 years</option>
+              <option value="6-10 years">6&#8211;10 years</option>
+              <option value="Above 10 years">Above 10 years</option>
+            </select>
+          </label>
+        </div>
+      </div>
 
-      <p class="form-section-label">GST and billing details</p>
+      <div id="section-gst" style="display:none;">
+        <p class="form-section-label">GST and billing details</p>
 
+        <div id="field-gst" style="display:none;">
+          <label>GST Number
+            <span class="field-note">
+              Required for GST invoice — leave blank if not applicable
+            </span>
+            <input type="text" id="f-gst"
+                   placeholder="e.g. 22AAAAA0000A1Z5"
+                   maxlength="15"
+                   style="text-transform:uppercase">
+          </label>
+        </div>
 
-      <label>GST Number (optional — required for GST invoice)
-        <input type="text" id="f-gst"
-               placeholder="e.g. 22AAAAA0000A1Z5"
-               maxlength="15" style="text-transform:uppercase">
-      </label>
-      <label>Complete billing address *
-        <textarea id="f-address" required rows="3"
-          placeholder="Flat/Office No, Building, Street, Area, City, State, PIN"></textarea>
-      </label>
-
+        <div id="field-address" style="display:none;">
+          <label>Complete billing address <span class="req-star">*</span>
+            <textarea id="f-address" rows="3"
+              placeholder="Flat/Office No, Building, Street, Area, City, State, PIN">
+            </textarea>
+          </label>
+        </div>
+      </div>
 
       <div id="form-error" class="error" style="display:none"></div>
+
       <button type="submit" id="submit-btn">
-        Proceed to payment →
+        Proceed to payment &#8594;
       </button>
       <p class="fine-print">
-        Secure payment via PayU. GST invoice provided for all paid registrations.
+        Secure payment via PayU.
+        GST invoice provided where applicable.
       </p>
+
     </form>
   </section>
+
   <section id="faq-section">
     <h2>Frequently asked questions</h2>
     <div id="faq-list"></div>
   </section>
+
 </main>
+
 <footer id="site-footer">
   <p id="footer-brand"></p>
   <p id="footer-contact"></p>
 </footer>
+
 <div id="overlay" style="display:none">
   <div class="overlay-box">
     <div class="spinner"></div>
@@ -126,136 +164,240 @@
     <p class="fine-print">Do not close this page.</p>
   </div>
 </div>
+
 <script>
 const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwliReFociqd81-CdHomPHv94s0HplkCDTAJpqcXUUi-qeEXTN5ewpMZ0ad6K0UJpvZ/exec";
 
+// ── Helper: show or hide a field wrapper and set required ──
+function toggleField(fieldId, visible, makeRequired) {
+  const wrapper = document.getElementById(fieldId);
+  if (!wrapper) return;
+  wrapper.style.display = visible ? "block" : "none";
+  if (makeRequired) {
+    const input = wrapper.querySelector("input, select, textarea");
+    if (input) {
+      if (visible) {
+        input.setAttribute("required", "required");
+      } else {
+        input.removeAttribute("required");
+        input.value = "";  // clear value when hidden
+      }
+    }
+  }
+}
+
+// ── Apply fields config for the selected session ──
+function applyFieldsConfig(fields) {
+  if (!fields) {
+    // No fields config — hide all optional sections
+    document.getElementById("section-professional").style.display = "none";
+    document.getElementById("section-gst").style.display = "none";
+    return;
+  }
+
+  // Professional section — show if any professional field is on
+  const showProfessional = fields.show_arn
+    || fields.show_euin
+    || fields.show_aum
+    || fields.show_experience;
+
+  document.getElementById("section-professional")
+    .style.display = showProfessional ? "block" : "none";
+
+  // GST section — show if any GST field is on
+  const showGstSection = fields.show_gst || fields.show_address;
+  document.getElementById("section-gst")
+    .style.display = showGstSection ? "block" : "none";
+
+  // Individual fields — toggle visibility and required state
+  toggleField("field-arn",        fields.show_arn,        true);
+  toggleField("field-euin",       fields.show_euin,       false); // never required
+  toggleField("field-aum",        fields.show_aum,        true);
+  toggleField("field-experience", fields.show_experience, true);
+  toggleField("field-gst",        fields.show_gst,        false); // never required
+  toggleField("field-address",    fields.show_address,    true);
+}
 
 async function init() {
-  const cfg = await fetch("config.json").then(r => r.json());
-  const brand = cfg.brand;
+  const cfg      = await fetch("config.json").then(r => r.json());
+  const brand    = cfg.brand;
   const sessions = cfg.sessions.filter(s => s.active);
-  document.documentElement.style.setProperty("--brand", brand.primaryColor);
-  document.getElementById("brand-name").textContent = brand.name;
 
-  // Show logo if configured in config.json
-  if (brand.logoUrl) {
-    const logo = document.getElementById("brand-logo");
-    logo.src = brand.logoUrl;
-    logo.alt = brand.name;
-    logo.style.display = "block";
-    // Hide the text brand name if logo is present — avoids duplication
-    document.getElementById("brand-name").style.display = "none";
-  }
-  document.getElementById("page-title").textContent = brand.name + " — Register";
+  // Apply brand colour
+  document.documentElement.style
+    .setProperty("--brand", brand.primaryColor);
+  document.getElementById("brand-name").textContent = brand.name;
+  document.getElementById("page-title").textContent =
+    brand.name + " — Register";
   document.getElementById("footer-brand").textContent = brand.name;
   document.getElementById("footer-contact").innerHTML =
-    "Support: <a href='mailto:" + brand.supportEmail + "'>" +
-    brand.supportEmail + "</a>  |  " + brand.supportPhone;
+    "Support: <a href='mailto:" + brand.supportEmail + "'>"
+    + brand.supportEmail + "</a>  |  " + brand.supportPhone;
 
+  // Logo
+  if (brand.logoUrl) {
+    const logo = document.getElementById("brand-logo");
+    logo.src   = brand.logoUrl;
+    logo.alt   = brand.name;
+    logo.style.display = "block";
+    document.getElementById("brand-name").style.display = "none";
+  }
 
+  // Populate session dropdown
   const sel = document.getElementById("session-select");
   sessions.forEach(s => {
-    const o = document.createElement("option");
-    o.value = s.id;
-    o.textContent = s.title + " — " + s.date + " at " + s.time;
+    const o       = document.createElement("option");
+    o.value       = s.id;
+    o.textContent = s.title + " \u2014 " + s.date + " at " + s.time;
     sel.appendChild(o);
   });
-
 
   function getSelected() {
     return sessions.find(s => s.id === sel.value);
   }
 
-
   function renderSession(s) {
     document.getElementById("webinar-title").textContent = s.title;
-    document.getElementById("webinar-meta").textContent =
-      s.date + "  •  " + s.time + "  •  " + s.duration;
-    document.getElementById("seats-badge").textContent =
+    document.getElementById("webinar-meta").textContent  =
+      s.date + "  \u2022  " + s.time + "  \u2022  " + s.duration;
+    document.getElementById("seats-badge").textContent   =
       s.seatsLeft + " seats remaining";
-    document.getElementById("price-display").innerHTML =
-      "<span class='price'>₹" + s.price.toLocaleString("en-IN") +
-      "</span>  <span class='price-note'>+ GST as applicable</span>";
+    document.getElementById("price-display").innerHTML   =
+      "<span class='price'>&#8377;"
+      + s.price.toLocaleString("en-IN")
+      + "</span>  <span class='price-note'>+ GST as applicable</span>";
+
+    // Topics
     const ul = document.getElementById("topics-list");
     ul.innerHTML = "";
-    s.topics.forEach(t => {
-      const li = document.createElement("li");
-      li.textContent = t; ul.appendChild(li);
+    (s.topics || []).forEach(t => {
+      const li       = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
     });
-  }
 
+    // Speaker
+    if (s.speaker) {
+      document.getElementById("speaker-name").textContent = s.speaker;
+      document.getElementById("speaker-bio").textContent  =
+        s.speakerBio || "";
+      document.getElementById("speaker-section").style.display = "block";
+    } else {
+      document.getElementById("speaker-section").style.display = "none";
+    }
+
+    // ── Apply fields config for this session ──
+    applyFieldsConfig(s.fields || null);
+  }
 
   sel.addEventListener("change", () => renderSession(getSelected()));
   if (sessions.length) renderSession(sessions[0]);
 
-
+  // FAQs
   const faqDiv = document.getElementById("faq-list");
   cfg.faqs.forEach(f => {
-    faqDiv.innerHTML += "<details><summary>" + f.q +
-      "</summary><p>" + f.a + "</p></details>";
+    faqDiv.innerHTML +=
+      "<details><summary>" + f.q
+      + "</summary><p>" + f.a + "</p></details>";
   });
 
-
+  // ── Form submit ──
   document.getElementById("reg-form")
-    .addEventListener("submit", async e => {
-    e.preventDefault();
-    const get = id => document.getElementById(id).value.trim();
-    const name       = get("f-name");
-    const email      = get("f-email");
-    const phone      = get("f-phone");
-    const city       = get("f-city");
-    const arn        = get("f-arn");
-    const euin       = get("f-euin");
-    const aum        = get("f-aum");
-    const experience = get("f-experience");
-    const gst        = get("f-gst").toUpperCase();
-    const address    = get("f-address");
-    const errEl      = document.getElementById("form-error");
+    .addEventListener("submit", async ev => {
+    ev.preventDefault();
+
+    const get    = id => document.getElementById(id);
+    const val    = id => get(id) ? get(id).value.trim() : "";
+    const name   = val("f-name");
+    const email  = val("f-email");
+    const phone  = val("f-phone");
+    const city   = val("f-city");
+    const errEl  = document.getElementById("form-error");
     errEl.style.display = "none";
 
-
-    // Validation
-    if (!name||!email||!phone||!city||!arn||!aum||!experience||!address){
+    // Validate mandatory fields
+    if (!name || !email || !phone || !city) {
       errEl.textContent = "Please fill in all required fields.";
-      errEl.style.display = "block"; return;
+      errEl.style.display = "block";
+      return;
     }
     if (!/^[^@]+@[^@]+\.[^@]+$/.test(email)) {
       errEl.textContent = "Please enter a valid email address.";
-      errEl.style.display = "block"; return;
+      errEl.style.display = "block";
+      return;
     }
-    if (gst && !/^[0-9]{2}[A-Z]{5}[0-9]{4}[A-Z]{1}[1-9A-Z]{1}Z[0-9A-Z]{1}$/.test(gst)){
-      errEl.textContent = "GST number format is invalid. Leave blank if not applicable.";
-      errEl.style.display = "block"; return;
-    }
-
 
     const session = getSelected();
+
+    // Validate visible required optional fields
+    const f = session.fields || {};
+    if (f.show_arn && !val("f-arn")) {
+      errEl.textContent = "Please enter your ARN Number.";
+      errEl.style.display = "block"; return;
+    }
+    if (f.show_aum && !val("f-aum")) {
+      errEl.textContent = "Please select your AUM Range.";
+      errEl.style.display = "block"; return;
+    }
+    if (f.show_experience && !val("f-experience")) {
+      errEl.textContent = "Please select your years of experience.";
+      errEl.style.display = "block"; return;
+    }
+    if (f.show_address && !val("f-address")) {
+      errEl.textContent = "Please enter your billing address.";
+      errEl.style.display = "block"; return;
+    }
+
+    // GST format validation — only if filled in
+    const gst = val("f-gst").toUpperCase();
+    if (gst && !/^[0-9]{2}[A-Z]{5}[0-9]{4}[A-Z]{1}[1-9A-Z]{1}Z[0-9A-Z]{1}$/.test(gst)) {
+      errEl.textContent =
+        "GST number format is invalid. Leave blank if not applicable.";
+      errEl.style.display = "block"; return;
+    }
+
     document.getElementById("submit-btn").disabled = true;
     document.getElementById("overlay").style.display = "flex";
 
+    // Collect all field values — empty string for hidden fields
+    const payload = {
+      source:      "landing_page",
+      name,
+      email,
+      phone,
+      city,
+      arn:         val("f-arn"),
+      euin:        val("f-euin"),
+      aum:         val("f-aum"),
+      experience:  val("f-experience"),
+      gst:         gst,
+      address:     val("f-address"),
+      session:     session.title,
+      sessionDate: session.date,
+      sessionTime: session.time,
+      sessionId:   session.id,
+      amount:      session.price,
+      utm:         new URLSearchParams(window.location.search)
+                     .get("utm_source") || ""
+    };
 
     try {
       await fetch(APPS_SCRIPT_URL, {
-        method: "POST", mode: "no-cors",
+        method:  "POST",
+        mode:    "no-cors",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          source:      "landing_page",
-          name, email, phone, city,
-          arn, euin, aum, experience,
-          gst, address,
-          session:     session.title,
-          sessionDate: session.date,
-          sessionTime: session.time,
-          sessionId:   session.id,
-          amount:      session.price
-        })
+        body:    JSON.stringify(payload)
       });
-    } catch(err) {}
+    } catch(err) {
+      // no-cors always throws — Sheet write confirmed via PayU webhook
+    }
+
     window.location.href = session.payuLink;
   });
 }
+
 init();
 </script>
+
 </body>
 </html>
-
