@@ -45,6 +45,8 @@
     { "q": "What if I cannot attend?",
       "a": "No Refunds" },
     { "q": "Is GST invoice provided?",
-      "a": "No, as the amount is inclusive of GST" }
+      "a": "No, as the amount is inclusive of GST" 
+    }
   ]
 }
+
