@@ -1,6 +1,6 @@
 {
   "brand": {
-  "name": "FinApp",
+  "name": "FinPulse Academy",
   "tagline": "Learn. Grow. Excel.",
   "primaryColor": "#4A3FB5",
   "logoUrl": "https://github.com/arvind-pulselabs/webinar-registration/blob/c808efd1927efb9ce49fbd4717cb07c369e89e80/finapp%20logo%20%20(1).png",
@@ -11,21 +11,21 @@
   
   "sessions": [
     {
-      "id": "session_apr_2026",
-      "title": "Risk Profiling Master Circular 2026 for MFD",
-      "date": "Sunday, 19 April 2026",
-      "time": "11:00 AM IST",
-      "duration": "2 hours",
+      "id": "session_may_2026",
+      "title": "Mastering Social Media with Compliance",
+      "date": "Sunday, 10 May 2026",
+      "time": "10:30 AM IST",
+      "duration": "1 hours",
       "price": 149,
       "currency": "INR",
-      "seatsLeft": 48,
-      "payuLink": "https://u.payu.in/PAYUMN/iJAygPlXRoxv",
-      "speaker": "Arvind Bhargava and Chidrup Jain",
-      "speakerBio": "MFD Compliance Consultants",
+      "seatsLeft": 49,
+      "payuLink": "https://u.payu.in/PAYUMN/7rZ2QIyn61T4",
+      "speaker": "Arvind Bhargava,Chidrup Jain and Shubham Gupta",
+      "speakerBio": "MFD Compliance Consultants & Social Media Consultant",
       "topics": [
-        "Understand SEBI Master Circular for MFD on Risk Profiling",
-        "What is suitability requirement",
-        "How to be Audit ready irrespective of AUM"
+        "Step-by-step guidance to get started",
+        "Practical, compliant social media approach for MFD",
+        "Access to post-session podcast + detailed learning material"
       ],
       "active": true,
 
@@ -41,10 +41,10 @@
   ],
   "faqs": [
     { "q": "Will I get a recording?",
-      "a": "Yes, all paid registrants receive the recording within 24 hours." },
+      "a": "Access to post-session podcast + detailed learning material" },
     { "q": "What if I cannot attend?",
       "a": "No Refunds" },
     { "q": "Is GST invoice provided?",
-      "a": "Yes. Please ensure your GST number is entered correctly at registration." }
+      "a": "No, as the amount is inclusive of GST" }
   ]
 }
