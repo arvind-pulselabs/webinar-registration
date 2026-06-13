@@ -11,21 +11,21 @@
   
   "sessions": [
     {
-      "id": "session_may_2026",
-      "title": "Mastering Social Media with Compliance",
-      "date": "Sunday, 10 May 2026",
+      "id": "session_June_2026",
+      "title": "FinPulse Academy Ratio Mastery Intensive: Sharpe & Treynor Ratios",
+      "date": "Saturday, 20 June 2026",
       "time": "10:30 AM IST",
-      "duration": "1 hours",
-      "price": 149,
+      "duration": "1:30 hours",
+      "price": 249,
       "currency": "INR",
       "seatsLeft": 49,
-      "payuLink": "https://u.payu.in/PAYUMN/7rZ2QIyn61T4",
-      "speaker": "Arvind Bhargava,Chidrup Jain and Shubham Gupta",
-      "speakerBio": "MFD Compliance Consultants & Social Media Consultant",
+      "payuLink": "https://u.payu.in/PAYUMN/aJvy7bplzhhk",
+      "speaker": "Rahul Agarwal CFP,CTEP, Arvind Bhargava CFP",
+      "speakerBio": "CFP Educator | Personal Finance Mentor ",
       "topics": [
-        "Step-by-step guidance to get started",
-        "Practical, compliant social media approach for MFD",
-        "Access to post-session podcast + detailed learning material"
+        "Step-by-step guidance to understand Financial Ratios",
+        "Sharpe Ratio - Risk-adjusted returns",
+        "Treynor Ratio - Market risk efficiency"
       ],
       "active": true,
 
@@ -41,7 +41,7 @@
   ],
   "faqs": [
     { "q": "Will I get a recording?",
-      "a": "Access to post-session podcast + detailed learning material" },
+      "a": "Live session only, however recorded session may be accessed on infily website on subscription" },
     { "q": "What if I cannot attend?",
       "a": "No Refunds" },
     { "q": "Is GST invoice provided?",
